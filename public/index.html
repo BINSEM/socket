@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Socket.io</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+</head>
+
+<body>
+
+<div id="login" class="ui grid">
+  <form class="ui form">
+    <h1 class="title">Put Your Nickname</h1>
+      <input id="username" type="text" name="login" maxlength="14" placeholder="NickName">
+      <!-- <input id="mail" type="mail" name="mail" placeholder="E-mail">
+      <input type="submit" value="send"> -->
+    </form>
+  </div>
+
+  <div id="holder" class="ui segment">
+    <div id="main" class="ui column grid">
+      <div class="ui three wide column grid">
+        <div id="users"></div>
+      </div>
+      <div id="msgshow" class="ui column grid">
+        <div id="segmsg" class="ui grid">
+          <div>
+            <div id="messages"></div>
+          </div>
+        </div>
+        <form id="message" action="" class="ui form">
+          <input id="m" type="text" autocomplete="off" />
+          <input id="send" type="submit" value="Send" class="ui primary button">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="css/semantic.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
