@@ -41,16 +41,17 @@ io.sockets.on('connection', function(socket, user){
       return false;
     }
     delete users[socket.id];
-    io.sockets.emit('disuser', socket.user);
+    socket.broadcast.emit('disuser', socket.user);
   })
 
   socket.on('newmessage', function(message){
-    // data = new Date();
+   var date = new Date();
+   var dateString = date.toLocaleDateString() + " " + date.toLocaleTimeString();
     // messages.push(message);
     // if(message.length > history){
     //  messages.shift();
     // }
-    io.sockets.emit('newmessage', {message:message, user:socket.user});
+    io.sockets.emit('newmessage', {message:message, user:socket.user, dateString: dateString});
 });
 
 });

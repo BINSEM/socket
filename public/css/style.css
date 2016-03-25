@@ -7,14 +7,14 @@ html, body { margin: 0; padding: 0; box-sizing: border-box; }
     #login input{ width: 100%; margin-left: auto; margin-right: auto;}
     #users{ height: 38.2em; margin: 0; padding: 0; font-size: 1.5em; background-color: #03A6FF; border-radius: 5px;}
     #users img{ padding: 0.5em 0 0 3em;}
-    /*#holder{ top: -58.4em;}*/
     #message input { width: 100%;}
     .ui.grid>*{ padding-top: 2em;}
     .ui.three.wide.column.grid{ padding: 0 0 0 1em;}
     .flash { color:#75D701; font-size: 1.5em;}
-    .msg { padding-left: 1em; border: 1px solid rgba(0, 0, 0, 0.19); border-radius: 5px; width: 85%; margin-bottom: 0.2em;}
+    .msg { padding-left: 1em; border: 1px solid rgba(0, 0, 0, 0.19); border-radius: 5px; width: 100%; margin-bottom: 2em;}
+    .msg p{ text-shadow: 0 0 3px #C5C6B6, 0 0 5px #C5C6B6; font-size: 1.5em; padding-left: 1em; margin-bottom: 0em; font-weight: bold;}
+    .time{ text-shadow: 0 0 3px #C5C6B6, 0 0 5px #C5C6B6; font-size: 1em; color: #0080ff; float: right; margin-top: -2em;}
     #messages{ padding-left: 1em; width: 100%}
     #messages div{ padding-left: 1em;}
-    #messages p{ text-shadow: 0 0 3px #C5C6B6, 0 0 5px #C5C6B6; font-size: 2em; padding-left: 1em; margin-bottom: 0em; font-weight: bold;}
     #messages img , #messages h2{ display: inline;}
-    #messages h2{ padding-left: 0.5em;}
+    #messages h2{ padding-left: 0.5em; color: #45d9fd;}
